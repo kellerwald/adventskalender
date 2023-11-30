@@ -107,7 +107,10 @@ li a:hover {
 	</style>
 
 	<script>
-		let person = prompt("Dein Name?", "...");
+		<!--let person = prompt("Dein Name?", "..."); -->
+			fetch("test.json")
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 	</script>
 </head>
 
