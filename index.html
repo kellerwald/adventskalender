@@ -111,11 +111,41 @@ li a:hover {
 </head>
 
 <body>	
-<script type="text/javascript" src="data.json"></script>
-<script type="text/javascript" src="javascript.js"></script>
-<script> 
-var mydata[0].name = prompt("Dein Name?", "..."); 
+
+   <script type="text/javascript">
+
+var q = new Date();
+var m = q.getMonth()+1;
+var d = q.getDay();
+var y = q.getFullYear();
+
+var date = new Date(y,m,d);
+
+vTag2=new Date('2023-12-02');
+console.log(date);
+console.log(mydate)
+
+if()
+{
+    alert("greater");
+}
+else
+{
+    alert("smaller")
+}
+
+
+</script>
+
 	
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="javascript.js">
+function doClick() {
+   if (date>mydate)
+       window.location.href = "https://kellerwald.github.io/adventskalender/#link3";
+	else
+	alert("Zu früh!");
+}
 </script>
 	
 
@@ -127,8 +157,8 @@ var mydata[0].name = prompt("Dein Name?", "...");
 	</ul>
 	
 	<ul id="nav">
-	<li><a href="#link1">1</a></li>
-	<li><a href="#link2">2</a></li>
+	<li><a href="#link2">1</a></li>
+	<li><a href="https://github.com/kellerwald/adventskalender/" onclick="doClick(); return false;>2</a></li>
 	<li><a href="#link3">3</a></li>
 	<li><a href="#link3">4</a></li>
 	<li><a href="#link3">5</a></li>
