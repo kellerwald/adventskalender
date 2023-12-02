@@ -25,5 +25,6 @@ const compareDates = (d1, d2) => {
 };
 
 var testDate = "12/01/2023";
-alert(compareDates(today, testDate));
+const  result= compareDates(today, testDate);
+alert(result);
 
