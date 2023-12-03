@@ -125,10 +125,13 @@ var yyyy = today2.getFullYear();
 today2 = mm + '/' + dd + '/' + yyyy;
 var result = 0;
 var questionNo = 0;
+let No = 1;
 
 function Vergleich(Tag){
-    	questionNo = Tag;
-	alert(questionNo);
+    	No = Tag;
+	alert(No);
+	result=mydata[No].name;
+	alert(result);
 }
 //console.log(questionNo); 
 </script>
@@ -172,9 +175,7 @@ function Vergleich(Tag){
 
 <script>
 
-if (questionNo == 1){result=mydata[1].name}
-else if (questionNo == 2){result=mydata[2].name}
-else if (questionNo == 3){result=mydata[2].name};
+
 document.getElementsByTagName('div')[0].innerHTML = result;
 </script>
 
