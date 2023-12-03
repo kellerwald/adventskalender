@@ -126,10 +126,11 @@ today2 = mm + '/' + dd + '/' + yyyy;
 var testDate = "12/01/2023";
 var result = "Wähle ein Türchen";
 var questionNo = 2;
+var tagN = 0;
 
-function Vergleich(Tag,tag){
+function Vergleich(Tag,tagN){
     	questionNo = Tag;
-	testDate = mm + '/' + tag + '/' + yyyy;
+	testDate = mm + '/' + String(tagN) + '/' + yyyy;
 	alert(questionNo);
 alert(testDate);
 alert(result);
