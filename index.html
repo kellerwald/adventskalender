@@ -125,7 +125,12 @@ var yyyy = today2.getFullYear();
 today2 = mm + '/' + dd + '/' + yyyy;
 var testDate = "12/01/2023";
 var result = "start";
+var questionNo = 2;
 
+function Vergleich(Tag){
+    questionNo = Tag;
+}
+//console.log(questionNo); 
 </script>
 	
 
@@ -137,7 +142,7 @@ var result = "start";
 	</ul>
 	
 	<ul id="nav">
-	<li><button onClick="tagVergleich()">1</button></li>
+	<li><button onClick="Vergleich(1)">1</button1></button></li>
 	<li><a href="#link2">2</a></li>
 	<li><a href="#link3">3</a></li>
 	<li><a href="#link4">4</a></li>
@@ -167,7 +172,7 @@ var result = "start";
 
 <script>
 
-if(testDate==testDate) {result=mydata[0].name}else {result="no"};
+if(testDate==testDate) {result=mydata[questionNo].name}else {result="no"};
 document.getElementsByTagName('div')[0].innerHTML = result;
 </script>
 
