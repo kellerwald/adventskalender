@@ -126,7 +126,7 @@ today2 = mm + '/' + dd + '/' + yyyy;
 var testDate = "12/01/2023";
 var result = "Wähle ein Türchen";
 var questionNo = 2;
-var tagN = String(0);
+var tagN = 0;
 
 function Vergleich(Tag,tagN){
     	questionNo = Tag;
@@ -149,9 +149,9 @@ alert(result);
 	</ul>
 	
 	<ul id="nav">
-	<li><button onClick="Vergleich(1)">1</button1></button></li>
-	<li><button onClick="Vergleich(2)">2</button1></button></li>
-	<li><button onClick="Vergleich(3)">3</button1></button></li>
+	<li><button onClick="Vergleich(1,1)">1</button1></button></li>
+	<li><button onClick="Vergleich(2,2)">2</button1></button></li>
+	<li><button onClick="Vergleich(3,3)">3</button1></button></li>
 	<li><a href="#link4">4</a></li>
 	<li><a href="#link5">5</a></li>
 	<li><a href="#link6">6</a></li>
