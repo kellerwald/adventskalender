@@ -124,11 +124,12 @@ var yyyy = today2.getFullYear();
 
 today2 = mm + '/' + dd + '/' + yyyy;
 var testDate = "12/01/2023";
-var result = "start";
+var result = "Wähle ein Türchen";
 var questionNo = 2;
 
-function Vergleich(Tag){
-    questionNo = Tag;
+function Vergleich(Tag,tag){
+    	questionNo = Tag;
+	testDate = mm + '/' + tag + '/' + yyyy;
 }
 //console.log(questionNo); 
 </script>
@@ -172,7 +173,7 @@ function Vergleich(Tag){
 
 <script>
 
-if(today2!=testDate){result="no"} 
+if(today2!=testDate){result="Wähle ein Türchen"} 
 else if (questionNo = 1){result=mydata[1].name}
 else if (questionNo = 2){result=mydata[2].name};
 document.getElementsByTagName('div')[0].innerHTML = result;
