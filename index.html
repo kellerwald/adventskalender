@@ -123,12 +123,12 @@ var mm = String(today2.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today2.getFullYear();
 
 today2 = mm + '/' + dd + '/' + yyyy;
-var testDate = new Date();
 var result = "Wähle ein Türchen";
-var questionNo = 2;
+var questionNo = 0;
 
 function Vergleich(Tag){
     	questionNo = Tag;
+	alert(questionNo);
 }
 //console.log(questionNo); 
 </script>
@@ -176,9 +176,6 @@ if (questionNo = 1){result=mydata[1].name}
 else if (questionNo = 2){result=mydata[2].name}
 else if (questionNo = 3){result=mydata[2].name};
 document.getElementsByTagName('div')[0].innerHTML = result;
-alert(questionNo);
-alert(testDate);
-alert(result);
 </script>
 
 		
