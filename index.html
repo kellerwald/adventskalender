@@ -117,7 +117,14 @@ li a:hover {
  var mydata = JSON.parse(data);
 // alert(mydata[0].name);
 // alert(mydata[1].name);
+		var today2 = new Date();
+var dd = String(today2.getDate()).padStart(2, '0');
+var mm = String(today2.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today2.getFullYear();
 
+today2 = mm + '/' + dd + '/' + yyyy;
+var testDate = "12/01/2023";
+var result = "start";
 
 </script>
 	
@@ -130,7 +137,7 @@ li a:hover {
 	</ul>
 	
 	<ul id="nav">
-	<li><a href="#link1">1</a></li>
+	<li><button onClick="tagVergleich()">1</button></li>
 	<li><a href="#link2">2</a></li>
 	<li><a href="#link3">3</a></li>
 	<li><a href="#link4">4</a></li>
@@ -159,14 +166,7 @@ li a:hover {
 	<div id="Frage">
 
 <script>
-		var today2 = new Date();
-var dd = String(today2.getDate()).padStart(2, '0');
-var mm = String(today2.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today2.getFullYear();
 
-today2 = mm + '/' + dd + '/' + yyyy;
-var testDate = "12/01/2023";
-var result = "start";
 if(testDate==testDate) {result=mydata[0].name}else {result="no"};
 document.getElementsByTagName('div')[0].innerHTML = result;
 </script>
