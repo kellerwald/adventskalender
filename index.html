@@ -127,13 +127,15 @@ var testDate = new Date();
 var result = "Wähle ein Türchen";
 var questionNo = 2;
 var tagN = 0;
+var Vergleich = "kein Plan";
 
 function Vergleich(Tag,tagN){
     	questionNo = Tag;
 	day = String(tagN);
 	day = day.padStart(2,"0");
 	testDate = mm + '/' + day + '/' + yyyy;
-alert(if(today2!=testDate){"Falscher Tag"}else {"Richtiger Tag"});
+	Vergleich = if(today2==testDate){"Richtiger Tag"} else {"Falscher Tag"}
+alert(Vergleich);
 alert(questionNo);
 alert(mydata[1].name);
 }
