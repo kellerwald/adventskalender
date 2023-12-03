@@ -124,13 +124,19 @@ var yyyy = today2.getFullYear();
 
 today2 = mm + '/' + dd + '/' + yyyy;
 var result = 0;
-var questionNo = 0;
-let No = 1;
 
-function Vergleich(Tag){
-    	No = Tag;
-	alert(No);
-	result=mydata[No].name;
+function Vergleich1(){
+	result=mydata[1].name;
+	alert(result);
+}
+	
+function Vergleich2(){
+	result=mydata[1].name;
+	alert(result);
+}
+	
+function Vergleich3(){
+	result=mydata[1].name;
 	alert(result);
 }
 //console.log(questionNo); 
@@ -145,9 +151,9 @@ function Vergleich(Tag){
 	</ul>
 	
 	<ul id="nav">
-	<li><button onClick="Vergleich(1)">1</button></li>
-	<li><button onClick="Vergleich(2)">2</button></li>
-	<li><button onClick="Vergleich(3)">3</button></li>
+	<li><button onClick="Vergleich1()">1</button></li>
+	<li><button onClick="Vergleich2()">2</button></li>
+	<li><button onClick="Vergleich3()">3</button></li>
 	<li><a href="#link4">4</a></li>
 	<li><a href="#link5">5</a></li>
 	<li><a href="#link6">6</a></li>
