@@ -143,7 +143,7 @@ function Vergleich(Tag){
 	
 	<ul id="nav">
 	<li><button onClick="Vergleich(1)">1</button1></button></li>
-	<li><a href="#link2">2</a></li>
+	<li><button onClick="Vergleich(2)">2</button1></button></li>
 	<li><a href="#link3">3</a></li>
 	<li><a href="#link4">4</a></li>
 	<li><a href="#link5">5</a></li>
@@ -172,7 +172,9 @@ function Vergleich(Tag){
 
 <script>
 
-if(testDate==testDate) {result=mydata[questionNo].name}else {result="no"};
+if(today2!=testDate){result="no"} 
+else if (questionNo = 1){result=mydata[1].name}
+else if (questionNo = 2){result=mydata[2].name};
 document.getElementsByTagName('div')[0].innerHTML = result;
 </script>
 
