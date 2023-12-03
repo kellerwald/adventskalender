@@ -124,23 +124,15 @@ var yyyy = today2.getFullYear();
 
 today2 = mm + '/' + dd + '/' + yyyy;
 var result = 0;
+	
+function Tür1()
+{
+document.getElementById("Frage").innerHTML = 'Frage 1';
+}
 
-function Vergleich1(){
-	result=mydata[1].name;
-	console.log(result);
-	alert(result);
-}
-	
-function Vergleich2(){
-	result=mydata[1].name;
-	console.log(result);
-	alert(result);
-}
-	
-function Vergleich3(){
-	result=mydata[1].name;
-	console.log(result);
-	alert(result);
+function Tür2()
+{
+document.getElementById("Frage").innerHTML = 'Frage 2';
 }
  
 </script>
@@ -154,8 +146,8 @@ function Vergleich3(){
 	</ul>
 	
 	<ul id="nav">
-	<li><button onClick="Vergleich1()">1</button></li>
-	<li><button onClick="Vergleich2()">2</button></li>
+	<li><button onClick="Tür1()">1</button></li>
+	<li><button onClick="Tür2()">2</button></li>
 	<li><button onClick="Vergleich3()">3</button></li>
 	<li><a href="#link4">4</a></li>
 	<li><a href="#link5">5</a></li>
@@ -182,11 +174,6 @@ function Vergleich3(){
 	
 	<div id="Frage">
 
-<script>
-
-
-document.getElementsByTagName('div')[0].innerHTML = result;
-</script>
 
 		
 		
